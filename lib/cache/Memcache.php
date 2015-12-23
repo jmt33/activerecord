@@ -27,7 +27,7 @@ class Memcache
 			throw new CacheException("Could not connect to $options[host]:$options[port]");
 	}
 
-	public function flush()
+	public function flush(static::$options)
 	{
 		$this->memcache->flush();
 	}

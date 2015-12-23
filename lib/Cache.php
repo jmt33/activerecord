@@ -56,7 +56,7 @@ class Cache
 	public static function flush()
 	{
 		if (static::$adapter)
-			static::$adapter->flush();
+			static::$adapter->flush(static::$options);
 	}
 
 	/**
